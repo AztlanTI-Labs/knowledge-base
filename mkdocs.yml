@@ -1,1 +1,54 @@
-site_name: My Docs
+site_name: Aztlan Labs
+site_url: https://sys-azt.github.io/Aztlan-Labs/
+site_author: sys-azt
+site_description: Repositorio central de documentación técnica y laboratorios.
+
+# Configuración del Tema
+theme:
+  name: material
+  language: es
+  palette:
+    # Modo Claro
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    # Modo Oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  features:
+    - navigation.tabs          # Menú de navegación superior
+    - navigation.sections      # Secciones colapsables en el menú lateral
+    - navigation.top           # Botón para volver arriba
+    - search.suggest           # Sugerencias dinámicas en la barra de búsqueda
+    - search.highlight         # Resaltar palabras buscadas
+    - content.code.copy        # Botón para copiar código con un clic
+
+# Plugins
+plugins:
+  - search
+
+# Extensiones de Markdown (Soporte para bloques de código avanzados, notas, etc.)
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
+# Estructura de Navegación Inicial
+nav:
+  - Inicio: index.md
+  - Guías:
+    - Primeros Pasos: guides/getting-started.md
+  - Acerca de: about.md
