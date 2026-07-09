@@ -1,1 +1,18 @@
-site_name: My Docs
+site_name: Aztlan Labs
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Projects: projects/index.md
+  - Homelab: homelab/index.md
+  - Infrastructure: infrastructure/index.md
+  - Networking: networking/index.md
+  - Linux: linux/index.md
+  - Windows: windows/index.md
+  - Cloud: cloud/index.md
+  - Automation: automation/index.md
+  - AI: ai/index.md
+  - Career: career/index.md
